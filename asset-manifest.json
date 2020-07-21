@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/auction/static/css/main.5f361e03.chunk.css",
-    "main.js": "/auction/static/js/main.306abe2d.chunk.js",
-    "main.js.map": "/auction/static/js/main.306abe2d.chunk.js.map",
+    "main.js": "/auction/static/js/main.7de7257d.chunk.js",
+    "main.js.map": "/auction/static/js/main.7de7257d.chunk.js.map",
     "runtime-main.js": "/auction/static/js/runtime-main.9b0cace6.js",
     "runtime-main.js.map": "/auction/static/js/runtime-main.9b0cace6.js.map",
     "static/js/2.d818c60d.chunk.js": "/auction/static/js/2.d818c60d.chunk.js",
     "static/js/2.d818c60d.chunk.js.map": "/auction/static/js/2.d818c60d.chunk.js.map",
     "index.html": "/auction/index.html",
-    "precache-manifest.c7e186ecc17e1b5ac7a64f973ca38794.js": "/auction/precache-manifest.c7e186ecc17e1b5ac7a64f973ca38794.js",
+    "precache-manifest.6d438608bc2f141a1c93457e3e584621.js": "/auction/precache-manifest.6d438608bc2f141a1c93457e3e584621.js",
     "service-worker.js": "/auction/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/auction/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.d818c60d.chunk.js.LICENSE.txt": "/auction/static/js/2.d818c60d.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.9b0cace6.js",
     "static/js/2.d818c60d.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.306abe2d.chunk.js"
+    "static/js/main.7de7257d.chunk.js"
   ]
 }
