@@ -1,0 +1,74 @@
+@import "../../css/Colors.scss";
+
+.add-form {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0px 5px 0px;
+}
+
+.add-form_input-group {
+  display: flex;
+  flex-direction: column;
+  background-color: #3a3a3a;
+  width: 50%;
+}
+
+.add-form_input {
+  background-color: #3a3a3a;
+  border: 0px;
+  color: white;
+  font-size: large;
+}
+
+.add-form_submit:active {
+  font-size: 1.1em;
+}
+
+@keyframes input_focus {
+  0% {
+    // border-bottom: none;
+    box-shadow: none;
+  }
+  50% {
+    // border-bottom: solid 3px #ad00ff;
+    // margin-bottom: 1px;
+    box-shadow: 0 -4px 4px -1px $accent_color inset;
+  }
+  100% {
+    // border-bottom: solid 1px #ad00ff;
+    // margin-bottom: 3px;
+    box-shadow: 0 -4px 1px -3px $accent_color inset;
+  }
+}
+
+@keyframes input_focus_error {
+  0% {
+    border-bottom: none;
+  }
+  50% {
+    border-bottom: solid 3px red;
+    margin-bottom: 1px;
+  }
+  100% {
+    border-bottom: solid 1px red;
+    margin-bottom: 3px;
+  }
+}
+
+.add-form_input:focus {
+  outline: none;
+  animation: input_focus 0.4s forwards;
+}
+
+.add-form_submit {
+  background-color: #ad00ff;
+  border: 0px;
+  color: white;
+  font-size: large;
+}
+
+@media only screen and (max-width: 768px) {
+  .add-form_input-group {
+    width: 100%;
+  }
+}

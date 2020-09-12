@@ -1,21 +1,21 @@
 import React from 'react';
 import '../css/App.scss';
-import Timer from './Timer'
+import Timer from './Timer';
+import ControlBar from './ControlBar';
+import AddForm from './AddForm';
+import ModalMenu from './ModalMenu';
+import List from './List';
 
 function App() {
   return (
     <div className="App">
-      
       <main>
-        <Timer initialTime={(50000)} isPause={false}></Timer>
-        <section className="Timer"><div className="Timer">00:00:00</div></section>
-        <section className="List">
-          <section className="List__input"></section>
-          <section className="List__body"></section>
-        </section>
+        <ModalMenu></ModalMenu>
+        <Timer initialTime={(10000)}></Timer>
+        <AddForm></AddForm>
+        <List></List>
       </main>
-      <div className="Timer__controls"></div>
-
+      <ControlBar></ControlBar>
     </div>
   );
 }

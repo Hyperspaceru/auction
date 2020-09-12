@@ -1,0 +1,110 @@
+@import '../../css/Colors.scss';
+
+@keyframes input_focus {
+    0% {
+        // border-bottom: none;
+        box-shadow: none;
+    }
+    50% {
+        // border-bottom: solid 3px #ad00ff;
+        // margin-bottom: 1px;
+        box-shadow: 0 -4px 4px -1px $accent_color inset;
+    }
+    100% {
+        // border-bottom: solid 1px #ad00ff;
+        // margin-bottom: 3px;
+        box-shadow: 0 -4px 1px -3px $accent_color inset;
+    }
+}
+
+@keyframes input_focus_error {
+    0% {
+        border-bottom: none;
+    }
+    50% {
+        border-bottom: solid 3px red;
+        margin-bottom: 1px;
+    }
+    100% {
+        border-bottom: solid 1px red;
+        margin-bottom: 3px;
+    }
+}
+
+.list__input_group {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+}
+
+.list__input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    font-size: large;
+    margin: 2px 0 2px 0;
+    text-align: center;
+}
+.list__input::placeholder {
+    font-family: "Roboto";
+}
+
+.list__input:focus {
+    outline: none;
+    animation: input_focus 0.4s forwards;
+}
+
+.list__input[pattern]:invalid {
+    outline: none;
+    animation: input_focus_error 0.4s forwards;
+}
+
+.list__input[pattern]:invalid:focus {
+    outline: none;
+    animation: input_focus_error 0.4s forwards;
+}
+
+.list__item {
+    display: flex;
+    flex-basis: 300px;
+    background-color: transparent;
+    margin: 3px;
+}
+.list__delete {
+    visibility: hidden;
+    opacity: 0;
+    background-color: transparent;
+    font-size: 1.2em;
+    border: none;
+    color: white;
+    transition: visibility 0s, opacity 0.3s ease-out;
+}
+
+.list__item:hover .list__delete {
+    visibility: visible;
+    opacity: 1;
+    background-color: transparent;
+}
+
+.list__delete:active {
+    font-size: 1em;
+}
+
+.list__delete:focus {
+    outline: none;
+}
+
+.list__item:hover {
+    border: 1px solid $accent_color;
+    margin: 1px;
+    padding: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    .list__item {
+        flex-basis: auto;
+    }
+}

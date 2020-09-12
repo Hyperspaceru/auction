@@ -1,0 +1,40 @@
+@import '../../css/Colors.scss';
+
+.control-bar {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $control_accent;
+}
+
+.control-bar_button {
+    border: 0px;
+    background-color: transparent;
+    color: #efeff1;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    font-size: 1.8em;
+}
+
+.control-bar_button:active {
+    font-size: 1.6em;
+}
+
+.control-bar_button:focus {
+    outline: none;
+}
+
+.button--disable{
+    display:none;
+}
+
+// .button__play-pause {
+//     display: none;
+// }
+// .button__play-play:active {
+//     display: none;
+// }
+// .button__play-play:active + .button__play-pause {
+//     display: block;
+// }
