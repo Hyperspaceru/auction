@@ -10,9 +10,9 @@ const itemsReducer = (state = items, action) => {
     let _state
     switch (action.type) {
         case 'ADD_ITEM':
-            // debugger
+            newState = [...state]
             _state = [
-                ...state,
+                ...newState,
                 {
                     id: action.payload.id,
                     text: action.payload.text,

@@ -6,11 +6,10 @@
     height: 100%;
     z-index: 2;
     position: fixed;
-    // display: none;
 }
 
 .modal--disable {
-    display:none;
+    display: none;
 }
 
 .modal_menu {
@@ -20,10 +19,40 @@
     margin-right: -50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    display:flex;
+    flex-direction: column;
+}
+
+.modal_menu__button {
+    border: 0px;
+    background-color: transparent;
+    color: $font_color;
+    font-size: 1em;
+    outline: none;
+}
+.modal_menu__button:active {
+    color: $accent_color;
+}
+
+.button__link:link{
+    color:$font_color; 
+}
+.button__link:visited{
+    color:$accent_color; 
 }
 
 .modal_menu__item {
     font-size: 1.8em;
+}
+
+.modal_menu__subitem{
+    overflow: hidden;
+    transition: max-height .6s ease-in-out;
+    max-height:0;
+}
+
+.modal_menu__subitem--slide{
+    max-height: 500px;
 }
 
 .switch {

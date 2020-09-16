@@ -36,10 +36,12 @@ const Timer = ({ initialTime }) => {
       dispatch(resetTimerDone())
       setFormatedLeftTime(formatTime(timerLeft.current))
     }
-    //
     if (timerStore.isPause || timerStore.timeIsOver) {
       clearInterval(timerId)
       previousTime.current = null
+      if(timerStore.timeIsOver){
+        timerLeft.current = 0
+      }
       setFormatedLeftTime(formatTime(timerLeft.current))
     } else {
       const id = setInterval(() => {     
@@ -64,8 +66,10 @@ const Timer = ({ initialTime }) => {
     return () => clearInterval(timerId);
   }, [timerStore, dispatch]);
 
-  return (
-    <span className="timer">{formatedLeftTime.minutes ? formatedLeftTime.minutes : 0} : {formatedLeftTime.seconds ? formatedLeftTime.seconds : 0} : {formatedLeftTime.mills ? formatedLeftTime.mills : 0}</span>
+  return (<div className="timer_container">
+    <p className="timer">{formatedLeftTime.minutes ? formatedLeftTime.minutes : 0} : {formatedLeftTime.seconds ? formatedLeftTime.seconds : 0} : {formatedLeftTime.mills ? formatedLeftTime.mills : 0}</p>
+    
+    </div>
   )
 }
 

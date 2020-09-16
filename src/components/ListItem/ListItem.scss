@@ -48,6 +48,10 @@
     margin: 2px 0 2px 0;
     text-align: center;
 }
+
+.input_cost{
+    color:$font_color_secondary;
+}
 .list__input::placeholder {
     font-family: "Roboto";
 }
@@ -56,6 +60,7 @@
     outline: none;
     animation: input_focus 0.4s forwards;
 }
+
 
 .list__input[pattern]:invalid {
     outline: none;

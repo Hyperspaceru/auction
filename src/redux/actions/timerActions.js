@@ -31,3 +31,9 @@ export const minuteUpdateDone = () => ({
     type:'MINUTE_UPDATE_DONE'
 
 })
+export const stopTimerDone = () => ({
+    type:'STOP_TIMER_DONE'
+
+})
+
+

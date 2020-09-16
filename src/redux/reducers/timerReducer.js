@@ -26,6 +26,11 @@ const timerReducer = (state = initialState, action) => {
                 timeIsOver:true,
                 isPause:true                    
             }
+        case 'STOP_TIMER_DONE':
+            return{
+                ...state,
+                timeIsOver:false,
+            }
         case 'RESET_TIMER':
             return {
                 ...initialState,

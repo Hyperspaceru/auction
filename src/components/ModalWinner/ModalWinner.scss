@@ -1,0 +1,39 @@
+@import "../../css/Colors.scss";
+
+.modal-winner {
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: fixed;
+}
+
+.modal-winner--disable {
+    display:none;
+}
+
+.modal-winner_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size:1.5em;
+}
+.modal-winner_h1{
+    margin-bottom: 10px;
+    font-size:2.5em;
+}
+
+.modal-winner_name {
+    font-weight: 500;
+    margin:0;
+}
+
+.modal-winner_price {
+    color:#AAAAB5;
+    margin:0;
+
+}
+

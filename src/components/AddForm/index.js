@@ -8,8 +8,6 @@ const handleChange = (event, state) =>{
     state(event.target.value)
 }
 
-
-
 function AddForm() {
     const dispatch = useDispatch()
     const [text,setText] = useState()

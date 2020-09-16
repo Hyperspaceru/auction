@@ -59,7 +59,7 @@ function ListItem(props) {
         <div className="list__item">
             <div className="list__input_group">
                 <input type="text" className="list__input" value={_text} onChange={e => handleChange(e, setText)} onKeyUp={e => handleTextKey(e)} onBlur={e => handleTextFocus(e)} placeholder="Название" />
-                <input type="text" className="list__input" value={_cost} onChange={e => handleChange(e, setCost)} onKeyUp={e => handleCostKey(e)} onBlur={e => handleCostFocus(e)} placeholder="Сумма" pattern="[0-9\.\+\-\*\/]*" />
+                <input type="text" className="list__input input_cost" value={_cost} onChange={e => handleChange(e, setCost)} onKeyUp={e => handleCostKey(e)} onBlur={e => handleCostFocus(e)} placeholder="Сумма" pattern="[0-9\.\+\-\*\/]*" />
             </div>
             <button className="list__delete" onClick={props.onDelete} ><i class="fas fa-times"></i></button>
         </div>

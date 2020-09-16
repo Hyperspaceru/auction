@@ -1,0 +1,12 @@
+@import "../../css/Colors.scss";
+
+.buyoutItem {
+    margin:-0.5em 0 0 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: $font_color_secondary;
+}
+
+.buyoutItem--hide {
+    display:none;
+}
