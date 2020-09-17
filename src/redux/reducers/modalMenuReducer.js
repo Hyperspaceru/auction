@@ -1,7 +1,7 @@
 const initialState = {
     menuIsVisible: false,
-    buyoutEnabled: true,
-    buyoutCost: 600
+    buyoutEnabled: false,
+    buyoutCost: 0
     
 }
 

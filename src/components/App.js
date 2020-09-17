@@ -14,7 +14,7 @@ function App() {
       <main>
         <ModalWinner></ModalWinner>
         <ModalMenu></ModalMenu>
-        <Timer initialTime={(20000)}></Timer>
+        <Timer initialTime={(60000*10)}></Timer>
         <BuyoutItem></BuyoutItem>
         <AddForm></AddForm>
         <List></List>

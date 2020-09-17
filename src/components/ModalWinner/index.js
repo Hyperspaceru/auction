@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { stopTimerDone, stopTimer } from '../../redux/actions/timerActions';
 import './ModalWinner.scss'
 
-const maxReducer = (max, current) => max.cost >= current.cost ? max : current
+const maxReducer = (max, current) => parseFloat(max.cost) >= parseFloat(current.cost) ? max : current
 
 function ModalWinner() {
     const items = useSelector(state => state.itemsReducer)
