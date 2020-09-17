@@ -60,7 +60,7 @@ function ModalMenu() {
                         <div class="switch__slider"></div>
                     </label>
                     <div className={`modal_menu__subitem ${modalStore.buyoutEnabled?'modal_menu__subitem--slide':''}`}>
-                        <input class="" type="text" value={modalStore.buyoutCost} onChange={(e)=>{dispatch(setBuyoutCost(e.target.value))}}/>
+                        <input className="modal_menu__input" type="text" value={modalStore.buyoutCost} onChange={(e)=>{dispatch(setBuyoutCost(e.target.value))}}/>
                     </div>
                 </div>
                 {/* <div className="modal_menu__item">Размер столбца

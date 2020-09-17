@@ -107,3 +107,37 @@
 .switch__title {
     margin-right: 10px;
 }
+
+@keyframes input_focus {
+    0% {
+        // border-bottom: none;
+        box-shadow: none;
+    }
+    50% {
+        // border-bottom: solid 3px #ad00ff;
+        // margin-bottom: 1px;
+        box-shadow: 0 -4px 4px -1px $accent_color inset;
+    }
+    100% {
+        // border-bottom: solid 1px #ad00ff;
+        // margin-bottom: 3px;
+        box-shadow: 0 -4px 1px -3px $accent_color inset;
+    }
+}
+
+.modal_menu__input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: transparent;
+    border: 0px;
+    color: $font_color;
+    font-size: large;
+    margin: 2px 0 2px 0;
+    text-align: center;
+    box-shadow: 0 -4px 1px -3px $accent_color inset;
+}
+
+.modal_menu__input:focus {
+    outline: none;
+    animation: input_focus 0.4s forwards;
+}
